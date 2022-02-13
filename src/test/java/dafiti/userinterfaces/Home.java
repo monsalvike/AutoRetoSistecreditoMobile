@@ -19,7 +19,12 @@ public class Home {
     public static Target SELECTGENDER = Target.the("select gender").located(By.id("br.com.dafiti:id/form_gender"));
     public static Target SELECTORGENDER = Target.the("selector gender").located(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.TextView"));
     public static Target BTNREGISTERACOUNT = Target.the("btn register account").located(By.id("br.com.dafiti:id/register_button"));
-
-
+    public static Target SEARCHINPUT = Target.the("input search").located(By.id("br.com.dafiti:id/search_input"));
+    public static Target SEEALL = Target.the("see all products").located(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[6]/android.widget.TextView"));
+    public static Target BTNADDTOCARTGYSMAK = Target.the("add to cart item GYSMAK").located(By.xpath("//android.widget.Button[@content-desc=\"AGREGAR AL CARRITO\"]"));
+    public static Target BTNGOCART = Target.the("btn go cart").located(By.xpath("//android.widget.ImageView[@content-desc=\"Carrito\"]"));
+    public static Target ITEMADDRESULT = Target.the("item add result").located(By.id("br.com.dafiti:id/item_desc"));
+    public static Target CLICKSEARCH = Target.the("click search").located(By.id("br.com.dafiti:id/search_results"));
+    public static Target BTNGOTHEAPP = Target.the("go the app").located(By.xpath("//android.view.View[@content-desc=\"IR AL APP\"]"));
 }
 
