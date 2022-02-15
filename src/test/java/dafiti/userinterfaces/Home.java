@@ -4,6 +4,7 @@ import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
 public class Home {
+    public static Target BTNINTRO = Target.the("btn welcome").located(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ImageView"));
     public static Target BTNMYACCOUNT = Target.the("btn my account").located(By.id("br.com.dafiti:id/navigation_account"));
     public static Target BTNREGISTER = Target.the("btn Register").located(By.id("br.com.dafiti:id/account_email"));
     public static Target BTNCREATEACCOUNT = Target.the("bnt create account").located(By.id("br.com.dafiti:id/create_account"));

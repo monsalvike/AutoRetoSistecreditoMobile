@@ -24,7 +24,7 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 public class DafitiStepDefinitions {
 
     @Before
-    public void setStage(){
+    public void setStage() {
         OnStage.setTheStage(new OnlineCast());
     }
 
@@ -34,29 +34,31 @@ public class DafitiStepDefinitions {
         actor.whoCan(PlayTheApp.with(DriverOwn.init()));
 
     }
+
     @When("the user create a new account")
     public void theUserCreateANewAccount(List<ShopperInformation> shopperInformation) {
         theActorInTheSpotlight().attemptsTo(CreateAccount.whit(shopperInformation));
 
     }
+
     @When("the user search {string}")
     public void theUserSearch(String itemSearchInformation) {
         theActorInTheSpotlight().attemptsTo(SearchItem.with(itemSearchInformation));
 
     }
+
     @When("the user add item to shopping cart")
     public void theUserAddItemToShoppingCart() {
         theActorInTheSpotlight().attemptsTo(addItem());
 
     }
+
     @Then("the user can see the item added is the same in the shopping cart {string}")
     public void theUserCanSeeTheItemAddedIsTheSameInTheShoppingCart(String string) {
         theActorInTheSpotlight().attemptsTo(Ensure.that(ITEMADDRESULT).hasText(string));
 
 
     }
-
-
 
 
 }

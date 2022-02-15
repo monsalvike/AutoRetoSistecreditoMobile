@@ -10,13 +10,13 @@ import java.util.concurrent.TimeUnit;
 public class DriverOwn {
     private static AndroidDriver driver;
 
-    public static AndroidDriver init(){
+    public static AndroidDriver init() {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-        desiredCapabilities.setCapability("platformName","android");
-        desiredCapabilities.setCapability("deviceName","d7a728ec");
-        desiredCapabilities.setCapability("appActivity",".activity.SplashSelectCountry_");
-        desiredCapabilities.setCapability("appPackage","br.com.dafiti");
-        desiredCapabilities.setCapability("noReset","true");
+        desiredCapabilities.setCapability("platformName", "android");
+        desiredCapabilities.setCapability("deviceName", "d7a728ec");
+        desiredCapabilities.setCapability("appActivity", ".activity.SplashSelectCountry_");
+        desiredCapabilities.setCapability("appPackage", "br.com.dafiti");
+        desiredCapabilities.setCapability("noReset", "false");
 
         try {
             driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),
@@ -24,7 +24,7 @@ public class DriverOwn {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         return driver;
     }
 
