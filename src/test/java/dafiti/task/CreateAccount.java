@@ -41,7 +41,7 @@ public class CreateAccount implements Task {
                 Click.on(BTNREGISTERACOUNT));
     }
 
-    public static CreateAccount whit(List<ShopperInformation> shopperInformation) {
+    public static CreateAccount with(List<ShopperInformation> shopperInformation) {
         return new CreateAccount(shopperInformation);
     }
 }

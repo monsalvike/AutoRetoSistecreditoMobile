@@ -37,7 +37,7 @@ public class DafitiStepDefinitions {
 
     @When("the user create a new account")
     public void theUserCreateANewAccount(List<ShopperInformation> shopperInformation) {
-        theActorInTheSpotlight().attemptsTo(CreateAccount.whit(shopperInformation));
+        theActorInTheSpotlight().attemptsTo(CreateAccount.with(shopperInformation));
 
     }
 
